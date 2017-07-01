@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="taskApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--CSS -->
+    <!--<link rel="stylesheet" href="app/style/sass/node_modules/foundation-sites/scss">-->
+    <link rel="styleSheet" href="app/style/sass/css/main.css">
+
+    
+
+    <title ng-bind="$state.current.data.title||'App'"></title>
+<body>
+
+<div id="header_div">
+
+    <div class="logo">
+        
+        <image src="app/style/images/logo.png" class="image_logo"></image>
+        <span class="gitLogo">Github Users</span>
+
+        
+    
+        <ul id="menu">
+            <li><a ui-sref-active="active" ui-sref="home">Home</a></li>
+            <li><a ui-sref-active="active" ui-sref="users">Users</a></li>
+            <li><a ui-sref-active="active" ui-sref="about">About</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div ui-view scroll="auto"></div>
+</div>
+<!--JAVA SCRIPT-->
+    <script src="app/lib/js/angular.js"></script>
+    <script src="app/lib/js/angular-mocks.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/routing.js"></script>
+    <script src="app/pages/users/usersList/usersList.js"></script>
+    <script src="app/pages/users/userDetails/userDetails.js"></script>
+    <script src="app/service/webService.js"></script>
+    <script src="app/pages/home/home.js"></script>
+
+
+
+</body>
+</html>

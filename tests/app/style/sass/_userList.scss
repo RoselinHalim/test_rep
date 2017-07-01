@@ -1,0 +1,33 @@
+a{
+  font-size: 20px;
+  text-decoration: none;
+  color:black;
+}
+// a:focus{
+//   color: blue
+// }
+// a:visited{
+//   color: blue;
+// }
+@mixin border-radius_Fn($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+button{
+  @include border-radius_Fn(3px);
+  margin-top: 20px;
+  margin-left: 25px;
+  border-color: black;
+  padding: 5px;
+
+
+}
+.padding_text{
+  @extend .text_color;
+  padding: 0px;
+  margin-bottom: 20px;
+  
+
+}

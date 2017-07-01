@@ -1,0 +1,108 @@
+body{
+  color:black;
+  font-family: "Eras Bold ITC";
+  font-size: 20px;
+  margin:0px;
+
+}
+#header_div {
+  padding:10px;
+  border-style: solid;
+  border-color: black white;
+  .logo{
+    font-size: 22px;
+    .image_logo{
+      width:50px;
+      height:50px;
+      border: solid 1px black;
+      background-color: black;
+      vertical-align: middle;
+
+
+    }
+  
+  }
+   ul {
+  float: right;
+  margin-right: 20px;
+
+    li {
+  
+      display: inline-block;
+      list-style-type: none;
+      border-right: solid 1px black;
+    
+
+      a {
+        color: black;
+        text-align: center;
+        padding: 10px 20px 10px 20px ;
+        text-decoration: none;
+      }
+      a:hover {
+        color: blue;
+        
+
+      }
+      a:active {
+        color:gray;
+      }
+    }
+     li:last-child{
+       border-right: none
+     }
+     .active{
+       color: blue;
+  
+     }
+  }
+  
+}
+@media (max-width: 600px) {
+  #header_div {
+    background-color:  #333;
+    padding: 0px !important;
+    margin: 0px !important;
+    border:none !important;
+  }
+   .image_logo{display: none} 
+   .gitLogo{display: none}
+
+   .logo{
+         ul {
+       float: none !important;
+       text-align: center;
+       padding: 0 !important; 
+       margin: 0!important;
+       
+       
+li {
+  display: block !important;
+  border-right: none !important;
+  padding-bottom: 10px;
+  padding-top: 10px;
+ 
+a{
+  color: white !important;
+}
+}
+li:hover{
+  background-color:#4CAF50 !important; 
+}   
+     }   
+}
+   }
+
+.text_color{
+  color:#dcdcdc;
+}
+.home_container{
+  margin-top: 20px;
+  text-shadow: #999999;
+
+}
+.home_style{
+  padding: 10px;
+  box-sizing: border-box;
+}
+

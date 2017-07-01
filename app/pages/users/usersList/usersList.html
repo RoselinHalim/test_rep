@@ -1,0 +1,15 @@
+<span class="text_color" >User List</div>
+<div class="row">
+    <div class="large-2 columns">
+        <ul ng-repeat="user in users">
+            <a ui-sref="users.details({ id: user.login })">{{user.login}}</a>
+        </ul>
+
+        <button   ng-disabled="disabledButton()" ng-click="loadMore()">Load More...</button>
+    </div>
+    <div  class="row" class="large-1 columns">
+        <hr>
+    </div>
+
+    <div ui-view class="large-8 columns  "></div>
+</div>

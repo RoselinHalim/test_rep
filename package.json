@@ -1,0 +1,24 @@
+{
+  "name": "my-task",
+  "title": "my-task",
+  "description": "a basic taskApp",
+  "author": "",
+  "license": "",
+  "version": "",
+  "scripts": {
+    "start": "lite-server",
+    "test": "./node_modules/karma/bin/karma start karma.conf.js"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "lite-server": "^2.3.0",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.5"
+  }
+}
